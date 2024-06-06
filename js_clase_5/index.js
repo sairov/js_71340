@@ -43,7 +43,7 @@ const producto_1_literal = {
   id: '001ABC',
   nombre: 'Arroz',
   stock: 20,
-  precio: 120
+  precio: 120,
 };
 
 let producto_2_literal = {
@@ -145,3 +145,49 @@ hero.sayHi();
 //   console.log(hero[value]);
 // }
 
+class Persona {
+  constructor(username, lastname, age) {
+    this.username = username;
+    this.lastname = lastname;
+    this.age = age;
+  }
+
+  sayHi() {
+      console.log('Hola amigo, me llamo: ' + this.username + ', y tu?');
+  }
+}
+
+const hero = {
+  name: 'Bruce',
+  lastname: 'Banner',
+  alias: 'Hulk'
+}
+
+console.log(typeof Persona);
+console.log(typeof hero);
+
+// function User(username, password) {
+//   this.username = username;
+//   this.password = password;
+
+// }
+
+// const user = new Persona('pepe123', 'pepe123', 20);
+
+// user.sayHi();
+
+// class Estudiante extends Persona {
+//   constructor(curso) {
+//     super(username, lastname, age);
+//     this.curso = curso;
+//   }
+// }
+
+// class Docente extends Persona {
+//   constructor(curso) {
+//     super(username, lastname, age);
+//     this.curso = curso;
+//   }
+// }
+
+// const newEstudiante = new Estudiante('pepe', 'grillo', 22, 'Javascript');

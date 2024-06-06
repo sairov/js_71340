@@ -8,7 +8,7 @@
 
 // TURNERO
 
-// for (let i = 1; i <= 5; i++) {
+// for (let i = 0; i < 5; i++) {
 //   let nombre = prompt("Ingrese su nombre: ");
 
 //   if (nombre == "") {
