@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .character {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2b2b2b;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+      background-color: #2b2b2b;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .dance {
+      animation: dance 3s linear;
+    }
+
+    @keyframes dance {
+      from {
+        background-color: crimson;
+      }
+
+      to {
+        transform: rotate(3600deg);
+        background-color: #2b2b2b;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1 id="title"><span>Hola</span> mundo desde el HTML</h1>
+  <ul>
+    <h2>Lista de compras: </h2>
+    <li class="item">Café</li>
+    <li class="item">Yerba</li>
+    <li class="item">Azucar</li>
+  </ul>
+  <input type="text" id="text" value="Hola desde el input"> -->
+  <h1 id="title" style="font-size: 22px; color: crimson; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Elenco de los simpsons: </h1>
+  <!-- <input type="button" id="btn" value="click me! 🔥" onclick="alert('Pepe');"> -->
+  <input type="button" id="btn" value="Invitar a pepe! 🔥">
+  <input type="text" id="name">
+  <div id="fiesta">
+
+  </div>
+  <input type="button" id="dance" value="Dance! 🪩">
+  <!-- <video src="./video.mp4" id="vid" width="300px"></video> -->
+  <script src="index.js"></script>
+</body>
+</html>
