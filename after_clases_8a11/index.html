@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Mi Lista de Tareas</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de tareas</h1>
+    </header>
+    <main>
+        <section id="create" class="container">
+            <h2>Agregar Tarea</h2>
+            <form action="" id="add-task">
+                <label id="label" for="task">Tarea:</label>
+                <input id="task" type="text" name="task" required>
+                <label for="deadline">Plazo:</label>
+                <input id="deadline" type="text" name="deadline" required>
+                <label for="status">Estado:</label>
+                <select name="status" id="status">
+                    <option value="pendiente">Pendiente</option>
+                    <option value="finalizada">Finalizada</option>
+                    <option value="vencida">Plazo vencido</option>
+                </select>
+                <button id="btn" type="submit">Acción!</button>
+            </form>
+        </section>
+        <section id="tasks" class="container">
+            <h2>Listado de tareas:</h2>
+            <div id="todos">
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <p>Made with ❤️ by Sairov</p>
+    </footer>
+    <script src="./js/index_local.js"></script>
+</body>
+</html>
