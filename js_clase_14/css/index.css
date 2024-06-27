@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+
+/* Variables */
+
+:root {
+    /* Paleta */
+    --dark: #1e1f20;
+    --light: #ffffff;
+    --primary: #FF3366;
+    --accent: #00A6A6;
+    /* Font Sizes */
+    --text-title: 5.2em;
+    --text-subtitle: 4.6em;
+    --text-heading: 3.6em;
+    --text-link: 2.2em;
+    --text-base: 1.6em;
+    --text-caption: 1.4em;
+
+    /* Spacings */
+    --spacing-xl: 12rem;
+    --spacing-lg: 8.4rem;
+    --spacing-md: 5.2rem;
+    --spacing-sm: 3.6rem;
+    --spacing-xs: 2.0rem;
+}
+
+.toastify {
+    font-size: 1.6em;
+}
+
+.deleted-task {
+    background-color: crimson;
+    color: white;
+    width: 500px;
+    padding: 1.4rem;
+}
+
+/* Normalizado */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--dark);
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+p {
+    font-size: var(--text-base);
+}
+
+.bg-custom {
+    background-color: var(--primary);
+}
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/* header */
+
+header {
+    display: grid;
+    place-items: center;
+    padding: var(--spacing-sm);
+}
+
+header h1 {
+    font-size: var(--text-subtitle);
+}
+
+/* main section */
+
+main {
+    margin: var(--spacing-xs) 0 var(--spacing-md);
+}
+
+/* Form */
+
+#create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+#create h2 {
+    font-size: var(--text-heading);
+}
+
+#create form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+#create form label{
+    font-size: var(--text-link);
+}
+
+#create form :is(input, select)  {
+    padding: var(--spacing-xs);
+    font-size: var(--text-base);
+}
+
+#btn {
+    padding: var(--spacing-xs);
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: var(--text-link);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-delete {
+    padding: 12px;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: var(--text-link);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#tasks {
+    margin-top: 30px;
+    min-height: 40vh;
+}
+
+#tasks h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) 0;
+    border-bottom: 3px solid var(--primary);
+}
+
+.task p{
+    font-size: var(--text-link);
+}
+
+p.pendiente {
+    background-color: rgb(9, 114, 206);
+    font-size: 12px;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+p.finalizada {
+    background-color: rgb(15, 182, 6);
+    font-size: 12px;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+/* p.pendiente {
+    background-color: rgb(9, 114, 206);
+    font-size: 12px;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+} */
+
+p.vencida {
+    background-color: rgb(206, 9, 85);
+    font-size: 12px;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.task h3{
+    font-size: var(--text-heading);
+}
+
+/* footer */
+
+footer {
+    display: grid;
+    place-items: center;
+    padding: var(--spacing-xs);
+}
+
+footer p {
+    font-size: var(--text-link);
+    color: var(--light);
+}
